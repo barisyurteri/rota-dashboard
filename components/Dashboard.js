@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Card } from "../components/ui/card";
-import { Input } from "../components/ui/input";
-import { Button } from "../components/ui/button";
-import { Tabs } from "../components/ui/tabs";
-
+import { Card } from "./ui/card";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
+import { Tabs } from "./ui/tabs";
 import haversine from "haversine-distance";
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+
 
 export default function Dashboard() {
   const [activeWeek, setActiveWeek] = useState("week15");
